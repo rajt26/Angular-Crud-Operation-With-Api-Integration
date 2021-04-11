@@ -1,0 +1,17 @@
+<body>
+
+  <h2>Home</h2>
+
+  <div class="card" *ngFor="let phys of physicians">
+    <img src="img_avatar.png" alt="Avatar" style="width:100%">
+    <div class="container">
+      <h4><b>{{phys.name}}</b></h4>
+      <p>{{phys.email}}</p>
+      <i (click)="deletePhysician(phys._id)" class="fa fa-trash" style="font-size:30px;color:red"></i><br>
+      <a routerLink="/update/{{phys._id}}">
+        <i class="fa fa-edit" style="font-size:30px;color:blue"></i>
+      </a>
+    </div>
+  </div>
+
+</body>

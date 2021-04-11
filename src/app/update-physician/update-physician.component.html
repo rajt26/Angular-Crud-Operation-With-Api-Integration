@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+    <form [formGroup]='update' (ngSubmit)='updatePhysician()'>
+        <div class="container">
+            <h1>Update</h1>
+            <hr>
+
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Enter Name" name="name" id="name" formControlName='name' required>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" id="email" formControlName='email' required>
+
+
+            <button type="submit" class="registerbtn">Update</button>
+        </div>
+    </form>
+
+</body>
+
+</html>
